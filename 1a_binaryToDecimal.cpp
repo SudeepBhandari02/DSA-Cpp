@@ -15,11 +15,24 @@ int posDec(int n){
     return bin;
 } 
 
+void showNegDec(int num){
+    for (int i = 31; i >= 0; --i) {
+        cout << ((num >> i) & 1);
+    }
+    cout<<endl;
+}
+
 int main(){
-    //positive decimal to Binary
+    // positive decimal to Binary
     int n;
     cout<<"Enter a positive decimal Number"<<endl;
     cin>>n;
     int result=posDec(n);
     cout<<result<<endl;
+
+    // negative decimal to Binary
+    cout<<"Enter a negative Dec to Convert to binary "<<endl;
+    cin>>n;
+    showNegDec(n);
+    
 }
