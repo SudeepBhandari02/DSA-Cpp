@@ -5,3 +5,10 @@ Here I will record my daily milestones on DSA.
 Today I learned binary and decimal number systems and their conversions to each other 
 conversion Source code is in 1a and 1b
  
+<-----------------15/02/2025----------------->
+Today I solved 3 questions on Leetcode 
+Problem 1: https://leetcode.com/problems/reverse-integer/submissions/1544002603
+Problem 2: https://leetcode.com/problems/complement-of-base-10-integer/submissions/1544130252
+Problem 3: https://leetcode.com/problems/power-of-two/submissions/1544157044
+
+<-----------------15/02/2025----------------->
