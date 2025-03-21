@@ -4,7 +4,10 @@ using namespace std;
 int binarySearch(int arr[], int size, int key){
     int start=0;
     int end=size-1;
-    int mid=(end-start)/2;  //initialize mid to the middle of the array
+
+   // int mid=(end-start)/2;  //initialize mid to the middle of the array (Traditional Formula)
+   int mid = start + (end-start)/2;  //To handle sum value going out of int range here i have modified the formula
+
     while(start<=end){      //loop should run until start is less than or equal to end
         if(arr[mid]==key){
             return mid;     //returning index if element found
@@ -15,7 +18,7 @@ int binarySearch(int arr[], int size, int key){
         else{
             start=mid+1;
         }
-        mid=(start+end)/2;
+        mid=start + (end-start)/2;
     }
     return -1;              //if element not found return false(-1)
 }
@@ -26,6 +29,9 @@ int main(){
     int odd[9]={1,3,5,7,9,11,13,15,17};
 
     cout<<binarySearch(even,10,16)<<endl;
+    cout<<binarySearch(even,10,3)<<endl;
+
     cout<<binarySearch(odd,9,1)<<endl;
+    cout<<binarySearch(odd,9,16)<<endl;
 
 }
